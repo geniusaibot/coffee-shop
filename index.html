@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Corner - Cafeneaua Ta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">☕ Coffee Corner</a>
+            <ul class="nav-links">
+                <li><a href="#home">Acasă</a></li>
+                <li><a href="#about">Despre</a></li>
+                <li><a href="#menu">Meniu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bine ai venit la Coffee Corner</h1>
+            <p>Cea mai bună cafea din oraș, preparată cu drag și pasiune</p>
+            <a href="#menu" class="btn btn-primary">Vezi Meniul</a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Despre Noi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>La <strong>Coffee Corner</strong>, credem că o ceașcă de cafea este mai mult decât o băutură — este un moment de relaxare, de conversație, de bucurie.</p>
+                    <p>Cofetăria noastră este locul unde aromele se întâlnesc cu atmosfera caldă, creând amintiri de neuitat. Fiecare boabă de cafea este selectionată cu grijă, iar fiecare produs de patiserie este preparat zilnic, proaspăt.</p>
+                    <p>Vino să te bucuri de cafea excelentă, prăjituri delicioase și o atmosferă primitoare!</p>
+                </div>
+                <div class="about-image">
+                    <div class="coffee-cup">☕</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Meniul Nostru</h2>
+            
+            <!-- Băuturi -->
+            <div class="menu-category">
+                <h3 class="category-title">☕ Băuturi</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <h4>Espresso</h4>
+                        <p class="price">12 lei</p>
+                        <span class="badge">Clasic</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Cappuccino</h4>
+                        <p class="price">16 lei</p>
+                        <span class="badge">Popular</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Latte</h4>
+                        <p class="price">17 lei</p>
+                        <span class="badge">Cremos</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Americano</h4>
+                        <p class="price">14 lei</p>
+                        <span class="badge">Simplu</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Mocha</h4>
+                        <p class="price">18 lei</p>
+                        <span class="badge">Ciocolată</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Macchiato</h4>
+                        <p class="price">15 lei</p>
+                        <span class="badge">Italian</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Flat White</h4>
+                        <p class="price">16 lei</p>
+                        <span class="badge">Smooth</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Frappuccino</h4>
+                        <p class="price">20 lei</p>
+                        <span class="badge">Răcoritor</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prăjituri -->
+            <div class="menu-category">
+                <h3 class="category-title">🍰 Prăjituri</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <h4>Tort de Ciocolată</h4>
+                        <p class="price">18 lei</p>
+                        <span class="badge">Cel Mai Vândut</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Cheesecake</h4>
+                        <p class="price">16 lei</p>
+                        <span class="badge">Cremă</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Ecler</h4>
+                        <p class="price">12 lei</p>
+                        <span class="badge">Clasic</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Muffin</h4>
+                        <p class="price">10 lei</p>
+                        <span class="badge">Portabil</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Croissant</h4>
+                        <p class="price">8 lei</p>
+                        <span class="badge">Frunză</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Tartă cu Fructe</h4>
+                        <p class="price">15 lei</p>
+                        <span class="badge">Proaspăt</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Pavlova</h4>
+                        <p class="price">17 lei</p>
+                        <span class="badge">Aerian</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Brownie</h4>
+                        <p class="price">14 lei</p>
+                        <span class="badge">Ciocolatos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location/Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact & Locație</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <div>
+                            <h4>Adresa</h4>
+                            <p>Strada Exemplu Nr. 123<br>București, Sector 1</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📞</span>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>+40 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">✉️</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@coffee-corner.ro</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">🕐</span>
+                        <div>
+                            <h4>Program</h4>
+                            <p>Luni - Duminică<br>08:00 - 22:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-placeholder">
+                    <div class="map-inner">
+                        <span>🗺️</span>
+                        <p>Harta aici</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Coffee Corner. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
