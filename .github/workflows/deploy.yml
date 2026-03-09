@@ -3,16 +3,20 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [master]
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
